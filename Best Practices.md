@@ -20,7 +20,8 @@ zhaw-docs/
    └─ INCO/                 ← ein Ordner pro Modul
       ├─ INCO.md            ← Modulnotiz (gleicher Name wie der Ordner)
       ├─ 2026-09-17.md      ← eine Notiz pro Vorlesung
-      └─ Pictures/          ← Bilder nur dieses Moduls
+      ├─ Pictures/          ← Bilder nur dieses Moduls
+      └─ Files/             ← Aufgabenblätter, PDFs, Skripte dieses Moduls
 ```
 
 Regeln:
@@ -28,6 +29,7 @@ Regeln:
 - **Ordner = Struktur, Tags = Querschnitt.** Ordner bilden Semester/Modul ab, Tags alles andere.
 - **Keine tieferen Ebenen.** Wer ein viertes Level braucht, braucht meist eine Verlinkung.
 - **`Pictures/` pro Modul.** Ist in den Einstellungen als Anhang-Ordner hinterlegt (`./Pictures`), Bilder landen automatisch dort.
+- **`Files/` pro Modul.** Alles, was kein Bild ist: Aufgabenblätter, Musterlösungen, Datenblätter. Wird von Hand abgelegt und aus der Notiz heraus verlinkt (`[[Digitaler_Würfel.pdf]]`) – der Inhalt wird trotzdem in der Notiz festgehalten, das PDF ist nur der Beleg.
 
 ## 2. Dateinamen
 
@@ -37,6 +39,7 @@ Regeln:
 | Vorlesung | `YYYY-MM-DD` | `2026-09-17.md` |
 | Zusammenfassung | `Zusammenfassung <Thema>` | `Zusammenfassung Kanalcodierung.md` |
 | Bild | sprechend, klein, mit `_` | `einfache_logische_operatoren_symbole.png` |
+| Anhang | Originalname des Dozenten behalten | `Digitaler_Würfel.pdf` |
 
 - Datum als Dateiname sortiert die Vorlesungen automatisch chronologisch – **das Thema steht in der Property `thema`**, nicht im Dateinamen.
 - Umlaute und Leerzeichen in Dateinamen vermeiden (ausser bei Zusammenfassungen), das erspart Ärger bei Sync und Git.
