@@ -29,7 +29,7 @@ path:"HS26/INCO" -file:"INCO"
 3. Quellencodierung
 4. Kanalcodierung
 
-Die vier Themen folgen der Übertragungskette – siehe [[2026-09-17#Übertragungskette]].
+Die vier Themen folgen der Übertragungskette – siehe [[2026-KW38#Übertragungskette]].
 
 ## Praktikum
 

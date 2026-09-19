@@ -19,7 +19,7 @@ zhaw-docs/
 └─ HS26/                    ← ein Ordner pro Semester
    └─ INCO/                 ← ein Ordner pro Modul
       ├─ INCO.md            ← Modulnotiz (gleicher Name wie der Ordner)
-      ├─ 2026-09-17.md      ← eine Notiz pro Vorlesung
+      ├─ 2026-KW38.md       ← eine Notiz pro Vorlesungswoche
       ├─ Pictures/          ← Bilder nur dieses Moduls
       └─ Files/             ← Aufgabenblätter, PDFs, Skripte dieses Moduls
 ```
@@ -36,12 +36,14 @@ Regeln:
 | Notiztyp | Schema | Beispiel |
 |----------|--------|----------|
 | Modulnotiz | Modulkürzel | `INCO.md` |
-| Vorlesung | `YYYY-MM-DD` | `2026-09-17.md` |
+| Vorlesung | `YYYY-KWXX` | `2026-KW38.md` |
 | Zusammenfassung | `Zusammenfassung <Thema>` | `Zusammenfassung Kanalcodierung.md` |
 | Bild | sprechend, klein, mit `_` | `einfache_logische_operatoren_symbole.png` |
 | Anhang | Originalname des Dozenten behalten | `Digitaler_Würfel.pdf` |
 
-- Datum als Dateiname sortiert die Vorlesungen automatisch chronologisch – **das Thema steht in der Property `thema`**, nicht im Dateinamen.
+- Kalenderwoche als Dateiname sortiert die Vorlesungen automatisch chronologisch und macht sofort klar, in welche Semesterwoche der Stoff gehört. **Das genaue Datum steht in der Property `datum`, das Thema in `thema`** – beides nicht im Dateinamen.
+- **Eine Notiz pro Modul und Woche.** Hat ein Modul zwei Lektionen in derselben Woche, kommen beide in dieselbe Notiz. Die Woche ist die Lerneinheit, nicht der einzelne Termin.
+- Wochennummer immer zweistellig (`KW08`, nicht `KW8`), sonst stimmt die Sortierung nicht.
 - Umlaute und Leerzeichen in Dateinamen vermeiden (ausser bei Zusammenfassungen), das erspart Ärger bei Sync und Git.
 
 ## 3. Properties (Frontmatter)
@@ -116,7 +118,7 @@ Die häufigste Unordnung entsteht durch Kopien. Darum gilt eine klare Zuständig
 | Stoff einer einzelnen Lektion | **Vorlesungsnotiz** |
 | Prüfungsrelevante Verdichtung über mehrere Lektionen | **Zusammenfassung** |
 
-Statt kopieren: `[[INCO#Prüfung]]` verlinken oder mit `![[2026-09-17#Theorie]]` einbetten.
+Statt kopieren: `[[INCO#Prüfung]]` verlinken oder mit `![[2026-KW38#Theorie]]` einbetten.
 
 ## 7. Schreiben in der Notiz
 
